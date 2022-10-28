@@ -1,0 +1,15 @@
+#Config file for prob_exper.py
+[parameter]
+dataset_path = all_samples/sampled_batch_batch_22_shared_org_per_loc.csv
+check_point = xlm-roberta-base
+sample_size = 800
+pad_length = 100
+split_ratio = 0.75
+classifier = mlp
+[mlp]
+mlp_num_run = 5
+mlp_iter = 100
+mlp_hiddent_unit = 1024
+mlp_activation = relu
+[linear]
+linear_num_run = 5
