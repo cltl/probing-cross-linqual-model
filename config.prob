@@ -1,15 +1,16 @@
-#Config file for prob_exper.py
+#Config file for prob_exper.py mode [train,evaluate]
 [parameter]
-dataset_path = all_samples/sampled_batch_batch_22_shared_org_per_loc.csv
+mode = train
+model_path = model_out/
+train_data_path = data/en_mono_train.csv
+test_data_path = data/en_mono_test.csv
 check_point = xlm-roberta-base
-sample_size = 800
+sample_size = []
+log_prefix = en_mono
 pad_length = 100
-split_ratio = 0.75
 classifier = mlp
 [mlp]
 mlp_num_run = 5
 mlp_iter = 100
 mlp_hiddent_unit = 1024
 mlp_activation = relu
-[linear]
-linear_num_run = 5
